@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechStore | Tecnologia para você</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+
+        <div class="logo">
+            Tech<span>Store</span>
+        </div>
+
+        <nav class="nav">
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#ofertas">Ofertas</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <button class="cart-button" id="abrirCarrinho">
+            🛒 Carrinho
+            <span id="contadorCarrinho">0</span>
+        </button>
+
+        <button class="menu-button" id="menuButton">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- MENU MOBILE -->
+    <nav class="mobile-nav" id="mobileNav">
+
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#contato">Contato</a>
+
+    </nav>
+
+
+    <!-- BANNER -->
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <span class="tag">TECNOLOGIA</span>
+
+                <h1>
+                    Tecnologia para
+                    <span>transformar</span>
+                    seu dia.
+                </h1>
+
+                <p>
+                    Encontre notebooks, smartphones,
+                    acessórios e muito mais.
+                </p>
+
+                <a href="#produtos" class="hero-button">
+                    Comprar agora
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORIAS -->
+        <section class="categories">
+
+            <h2>Categorias</h2>
+
+            <div class="category-list">
+
+                <button class="categoria active" data-categoria="Todos">
+                    Todos
+                </button>
+
+                <button class="categoria" data-categoria="Notebook">
+                    Notebooks
+                </button>
+
+                <button class="categoria" data-categoria="Smartphone">
+                    Smartphones
+                </button>
+
+                <button class="categoria" data-categoria="Acessório">
+                    Acessórios
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRODUTOS -->
+        <section class="products-section" id="produtos">
+
+            <div class="section-header">
+
+                <div>
+                    <span class="tag">PRODUTOS</span>
+                    <h2>Produtos em destaque</h2>
+                </div>
+
+                <input
+                    type="text"
+                    id="campoBusca"
+                    placeholder="Buscar produto..."
+                >
+
+            </div>
+
+
+            <div class="products-grid" id="listaProdutos">
+                <!-- Produtos serão inseridos pelo JavaScript -->
+            </div>
+
+        </section>
+
+
+        <!-- OFERTA -->
+        <section class="offer" id="ofertas">
+
+            <div>
+
+                <span class="tag">OFERTA ESPECIAL</span>
+
+                <h2>
+                    Até 30% de desconto
+                </h2>
+
+                <p>
+                    Aproveite nossas ofertas
+                    por tempo limitado.
+                </p>
+
+                <a href="#produtos" class="hero-button">
+                    Ver ofertas
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTATO -->
+        <section class="contact" id="contato">
+
+            <span class="tag">CONTATO</span>
+
+            <h2>Entre em contato</h2>
+
+            <p>
+                Tem alguma dúvida? Fale conosco.
+            </p>
+
+            <form id="formContato">
+
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Seu nome"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Seu e-mail"
+                    required
+                >
+
+                <textarea
+                    id="mensagem"
+                    placeholder="Digite sua mensagem"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Enviar mensagem
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- CARRINHO -->
+    <div class="cart-overlay" id="cartOverlay">
+
+        <aside class="cart">
+
+            <div class="cart-header">
+
+                <h2>Meu carrinho</h2>
+
+                <button id="fecharCarrinho">
+                    ✕
+                </button>
+
+            </div>
+
+            <div id="listaCarrinho" class="cart-products">
+                <!-- Carrinho -->
+            </div>
+
+            <div class="cart-footer">
+
+                <div class="total">
+
+                    <span>Total:</span>
+
+                    <strong id="totalCarrinho">
+                        R$ 0,00
+                    </strong>
+
+                </div>
+
+                <button id="finalizarCompra">
+                    Finalizar compra
+                </button>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <div class="logo">
+            Tech<span>Store</span>
+        </div>
+
+        <p>
+            © 2026 TechStore. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
