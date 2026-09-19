@@ -4,7 +4,7 @@ Uma aplicação web de e-commerce desenvolvida com HTML, CSS e JavaScript, criad
 
 ##  Demonstração
 
- [Clique aqui para acessar o TechStore]()
+ [Clique aqui para acessar o TechStore](https://caique-torres.github.io/Tech-Store/)
 
 ##  Funcionalidades
 
